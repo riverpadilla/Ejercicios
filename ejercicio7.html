@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a77a525b21.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Ejercicios JS</title>
+</head>
+<body class="d-flex flex-column align-items-center">
+    <div class="container-fluid d-flex justify-content-between text-center text-white bg-success py-4">
+        <a class="col-1 text-white pt-3" href="ejercicio5.html" title="Left">
+            <i class="fa-solid fa-chevron-left fa-xl"></i>
+        </a>
+        <h1 class="col-10 mb-0">EJERCICIO #7</h1>
+        <a class="col-1 text-white pt-3" href="ejercicio8.html" title="Right"> 
+            <i class="fa-solid fa-chevron-right fa-xl"></i>
+        </a>
+    </div>
+    <h2 class="py-4">¿ Ingresar a Evento ?</h2>
+
+    <div class="d-flex row w-50">
+
+        <div class="border border-success my-3">
+            <div class="input-group my-3">
+                <span class="input-group-text col-3">Nombre:</span>
+                <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+            </div>
+            
+            <div class="input-group mb-3">
+                <span class="input-group-text col-3">Pase VIP:</span>
+                <select class="form-select"id="paseVIP" aria-label="Seleccion Pase VIP">
+                    <option selected value="true">SI cuenta con Pase VIP</option>
+                    <option value="false">NO cuenta con Pase VIP</option>
+                </select> 
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text col-3">Dinero $</span>
+                <input type="number" class="form-control" id="dinero" placeholder="Cantidad de Dinero Disponible">
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text col-3">Posee Entrada:</span>
+                <select class="form-select" id="entrada" aria-label="Seleccion Entrada">
+                    <option value="true">SI cuenta con Entrada</option>
+                    <option selected value="false">NO cuenta con Entrada</option>
+                </select> 
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text col-3">Usar Entrada:</span>
+                <select class="form-select" id="usarEntrada" aria-label="Seleccion uso de Entrada">
+                    <option value="true">SI desea usar la Entrada</option>
+                    <option selected value="false">NO deseo usar la Entrada</option>
+                </select> 
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text col-3">Comprar Entrada:</span>
+                <select class="form-select" id="comprarEntrada" aria-label="Seleccion compra de Entrada">
+                    <option value="true">SI desea comprar Entrada</option>
+                    <option selected value="false">NO deseo comprar Entrada</option>
+                </select> 
+            </div>
+
+        </div>
+
+    </div>
+        
+    <div class="btn-group w-25 pt-3">
+        <a href="#" class="btn btn-success" onclick="ejercicio7()">Calcular</a>
+        <a href="index.html" class="btn btn-success">Cancelar</a>
+        </div>
+
+    <div class="d-flex border border-1 mt-5 p-2 w-25" id="resultado">
+        <label id="lbResultado">No Result</label>
+    </div>
+
+
+    
+    <!-- Scripts enlazados a archivo HTML -->
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -9,37 +9,38 @@
 </head>
 <body class="d-flex flex-column align-items-center">
     <div class="container-fluid d-flex justify-content-between text-center text-white bg-success py-4">
-        <a class="col-1 text-white pt-3" href="index.html" title="Left">
+        <a class="col-1 text-white pt-3" href="ejercicio7.html" title="Left">
             <i class="fa-solid fa-chevron-left fa-xl"></i>
         </a>
-        <h1 class="col-10 mb-0">EJERCICIO #1</h1>
-        <a class="col-1 text-white pt-3" href="ejercicio2.html" title="Right"> 
+        <h1 class="col-10 mb-0">EJERCICIO #8 (PENDIENTE)</h1>
+        <a class="col-1 text-white pt-3" href="ejercicio9.html" title="Right"> 
             <i class="fa-solid fa-chevron-right fa-xl"></i>
         </a>
     </div>
+    <h2 class="py-4">¿ Número Incognito ?</h2>
 
-    <h2 class="py-4">¿ Primer Número > Segundo Número ?</h2>
+    <div class="d-flex row w-50">
 
-    <div class="border border-success mb-3 px-4 w-25">
-        <div class="my-3">
-            <label for="exampleFormControlInput1" class="form-label">Numero 1</label>
-            <input type="number" class="form-control mb-3" id="numero1" placeholder="Numero 1">
+        <div class="border border-success my-3">
+            
+            <div class="input-group mb-3">
+                <span class="input-group-text col-3">Dinero $</span>
+                <input type="number" class="form-control" id="dinero" placeholder="Cantidad de Dinero Disponible">
+            </div>
         </div>
-        
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Numero 2</label>
-            <input type="number" class="form-control mb-3" id="numero2" placeholder="Numero 2">
-        </div>
+
     </div>
         
-        <div class="btn-group w-25">
-            <a href="#" class="btn btn-success" onclick="ejercicio1()">Calcular</a>
-            <a href="index.html" class="btn btn-success">Cancelar</a>
+    <div class="btn-group w-25 pt-3">
+        <a href="#" class="btn btn-success" onclick="ejercicio8()">Calcular</a>
+        <a href="index.html" class="btn btn-success">Cancelar</a>
         </div>
-        
-        <div class="d-flex border border-1 mt-5 p-2 w-25" id="resultado">
-            <label id="lbResultado">No Result</label>
-		</div>
+
+    <div class="d-flex border border-1 mt-5 p-2 w-25" id="resultado">
+        <label id="lbResultado">No Result</label>
+    </div>
+
+
     
     <!-- Scripts enlazados a archivo HTML -->
     <script src="main.js"></script>

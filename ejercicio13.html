@@ -9,15 +9,15 @@
 </head>
 <body class="d-flex flex-column align-items-center">
     <div class="container-fluid d-flex justify-content-between text-center text-white bg-success py-4">
-        <a class="col-1 text-white pt-3" href="ejercicio5.html" title="Left">
+        <a class="col-1 text-white pt-3" href="ejercicio12.html" title="Left">
             <i class="fa-solid fa-chevron-left fa-xl"></i>
         </a>
-        <h1 class="col-10 mb-0">EJERCICIO #6</h1>
-        <a class="col-1 text-white pt-3" href="ejercicio7.html" title="Right"> 
+        <h1 class="col-10 mb-0">EJERCICIO #13</h1>
+        <a class="col-1 text-white pt-3" href="ejercicio1.html" title="Right"> 
             <i class="fa-solid fa-chevron-right fa-xl"></i>
         </a>
     </div>
-    <h2 class="py-4">¿ Capacitado para Conducir ?</h2>
+    <h2 class="py-4">¿ Datos de DNI ?</h2>
 
     <div class="d-flex row w-50">
 
@@ -26,7 +26,18 @@
                 <span class="input-group-text col-3">Nombre</span>
                 <input type="text" class="form-control" id="nombre" placeholder="Nombre">
             </div>
+
+            <div class="input-group my-3">
+                <span class="input-group-text col-3">Apellido</span>
+                <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text col-3">Número ID</span>
+                <input type="number" class="form-control" id="id" placeholder="Número de ID">
+            </div>
             
+
             <div class="input-group mb-3">
                 <span class="input-group-text col-3">Edad</span>
                 <input type="number" class="form-control" id="edad" placeholder="Edad">
@@ -34,30 +45,33 @@
             </div>
 
             <div class="input-group mb-3">
-                <span class="input-group-text col-3">Altura</span>
-                <input type="number" class="form-control" id="altura" placeholder="Altura">
-                <span class="input-group-text col-2" id="tag-altura">cm</span>            
+                <span class="input-group-text col-3">Estatura</span>
+                <input type="number" class="form-control" id="estatura" placeholder="Estatura">
+                <span class="input-group-text col-2" id="tag-estatura">cm</span>            
             </div>
 
-            <div class="input-group mb-3">
-                <span class="input-group-text col-3">Vision</span>
-                <input type="number" class="form-control" id="vision" placeholder="Vision">
-                <span class="input-group-text col-2" id="tag-vision">Escala [0-10]</span>            
+            <div class="input-group my-3">
+                <span class="input-group-text col-3">Fecha Expiración</span>
+                <input type="text" class="form-control" id="fechaExp" placeholder="Fecha Expiración de Documento">
             </div>
-
+            
         </div>
-
+       
     </div>
         
     <div class="btn-group w-25 pt-3">
-        <a href="#" class="btn btn-success" onclick="ejercicio6()">Calcular</a>
+        <a href="#" class="btn btn-success" onclick="ejercicio13('Imprimir')">Imprimir</a>
         <a href="index.html" class="btn btn-success">Cancelar</a>
-        </div>
+    </div>
 
-    <div class="d-flex border border-1 mt-5 p-2 w-25" id="resultado">
+    <div class="d-flex border border-1 mt-5 p-2 w-50" id="resultado">
         <label id="lbResultado">No Result</label>
     </div>
 
+    <div class="btn-group w-25 pt-3">
+        <a href="#" class="btn btn-success" onclick="ejercicio13('Aceptar')">Aceptar</a>
+        <a href="#" class="btn btn-success" onclick="ejercicio13('Rechazar')">Rechazar</a>
+    </div>
 
     
     <!-- Scripts enlazados a archivo HTML -->
