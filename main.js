@@ -187,13 +187,41 @@
         console.log(resultado);
         document.getElementById('lbResultado').innerHTML = resultado;
     }
+    
+    let numeroIncognito = Math.floor(Math.random() * 10);
+    const lbResultado = document.querySelector('#resultado');
+    let valorIntentos=[];
+    let intento=0;
 
     function ejercicio8(){
-        // let numeroIncognita=5;
-        // let numeroIngresado=document.getElementById("numeroIngresado").value;
-        let i=0;
+        let numeroIngresado = document.getElementById("numero").value;
+        let resultado='';
+        
+        if (intento<=2){
+            valorIntentos[intento]=numeroIngresado;
+            intento++
+            if(numeroIncognito==numeroIngresado){
+                resultado="Ganaste, haz adivinado el número";
+                lbResultado.style.backgroundColor = 'green';
+                lbResultado.style.Color = 'white';
+            }
+            if(numeroIncognito<numeroIngresado){
+                resultado="el numero ingresado es mayor, vuelve a intentarlo";
+            }
+            if(numeroIncognito>numeroIngresado){
+                resultado="el numero ingresado es menor, vuelve a intentarlo";
+            }
+        }else{
+            resultado="Lo siento, se agotaron los intentos: " + valorIntentos;
+        }
+        document.getElementById('lbResultado').innerHTML = resultado;
+    }
 
-        console.log(i=i++);
+    function resetEjercicio8(){
+        numeroIncognito = Math.floor(Math.random() * 10) + 1;
+        valorIntentos=[];
+        intento=0;
+        document.getElementById('lbResultado').innerHTML = "Juego Reiniciado";
     }
 
     function ejercicio9(){
